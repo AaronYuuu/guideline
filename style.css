@@ -1,40 +1,44 @@
 /* CHART Website Styles - Modern AI Innovation Theme */
 
 :root {
-    /* Modern AI-inspired color palette */
-    --primary: #4F46E5;
-    --primary-dark: #4338CA;
-    --primary-light: #6366F1;
-    --primary-lighter: #A5B4FC;
-    --accent: #06D6A0;
-    --accent-dark: #059669;
+    /* Primary Colors */
+    --primary: #50C9E3;          /* Light Blue for headings, buttons, links */
+    --primary-dark: #3BA5C7;     /* Darker shade of light blue */
+    --primary-light: #7DD3E8;    /* Lighter shade of light blue */
+    --primary-lighter: #A8E0ED;  /* Very light blue */
     
-    /* Sophisticated dark theme */
-    --bg-primary: #0F0F23;
-    --bg-secondary: #1A1B3A;
-    --bg-tertiary: #252657;
-    --bg-card: #1E1F3B;
-    --bg-hover: #2A2B4F;
+    /* Accent Colors */
+    --accent: #00C4CC;           /* Vibrant Teal for CTA buttons/highlights */
+    --accent-dark: #009BA3;      /* Darker vibrant teal */
+    --accent-soft: #D3A4E8;      /* Soft Lavender for icons/secondary buttons */
+    --accent-soft-dark: #C493DD; /* Darker lavender */
     
-    /* Modern text colors */
-    --text-primary: #F8FAFC;
-    --text-secondary: #CBD5E1;
-    --text-muted: #94A3B8;
-    --text-accent: #A5B4FC;
-    --text-white: #FFFFFF;
+    /* Background Colors */
+    --bg-primary: #1B2A49;       /* Dark Blue - dominant background */
+    --bg-secondary: #223554;     /* Slightly lighter dark blue */
+    --bg-tertiary: #2A4060;      /* Section breaks background */
+    --bg-card: rgba(27, 42, 73, 0.9);     /* Card backgrounds */
+    --bg-hover: #2F4A6B;         /* Hover states */
     
-    /* Glass morphism and modern borders */
-    --border-light: rgba(148, 163, 184, 0.1);
-    --border-medium: rgba(148, 163, 184, 0.2);
-    --border-accent: rgba(79, 70, 229, 0.3);
+    /* Text Colors */
+    --text-primary: #FFFFFF;     /* White - main text */
+    --text-secondary: #B8C5D1;   /* Light Grey - readable on dark blue background */
+    --text-muted: #8A9BB8;       /* Muted text on dark backgrounds */
+    --text-accent: #50C9E3;      /* Light blue for accent text */
+    --text-white: #FFFFFF;       /* Pure white */
+    
+    /* Border Colors */
+    --border-light: rgba(80, 201, 227, 0.1);   /* Light blue borders */
+    --border-medium: rgba(80, 201, 227, 0.2);  /* Medium blue borders */
+    --border-accent: rgba(80, 201, 227, 0.3);  /* Accent blue borders */
     
     /* Advanced shadows and effects */
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
-    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
-    --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.25);
-    --shadow-glow: 0 0 20px rgba(79, 70, 229, 0.3);
-    --shadow-accent: 0 4px 20px rgba(6, 214, 160, 0.2);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.25);
+    --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 20px rgba(80, 201, 227, 0.4);
+    --shadow-accent: 0 4px 20px rgba(0, 196, 204, 0.3);
     
     /* Modern border radius */
     --radius-sm: 6px;
@@ -52,7 +56,8 @@
     --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
     --gradient-accent: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
     --gradient-bg: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
-    --gradient-card: linear-gradient(145deg, rgba(30, 31, 59, 0.8) 0%, rgba(37, 38, 87, 0.6) 100%);
+    --gradient-card: linear-gradient(145deg, rgba(27, 42, 73, 0.9) 0%, rgba(34, 53, 84, 0.7) 100%);
+    --gradient-section: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
 }
 
 /* Reset and Base Styles */
@@ -431,7 +436,7 @@ p {
 .resource-icon {
     width: 40px;
     height: 40px;
-    color: var(--text-white);
+    color: #000000;
 }
 
 .resource-card h3 {
@@ -621,7 +626,7 @@ p {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+    background: var(--gradient-accent);
     color: var(--text-white);
     border: 1px solid transparent;
     box-shadow: var(--shadow-md);
@@ -1315,7 +1320,7 @@ button:focus {
 .feature-icon svg {
     width: 30px;
     height: 30px;
-    color: var(--primary);
+    color: #000000;
 }
 
 .feature-item h3 {
