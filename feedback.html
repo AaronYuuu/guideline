@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - CHART Reporting Guideline</title>
+    <meta name="description" content="Provide feedback on your experience using the CHART reporting guideline.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="CHARTlogo.png" alt="CHART Logo" class="logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="citation.html" class="nav-link">Citation</a></li>
+                    <li><a href="feedback.html" class="nav-link active">Feedback</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Feedback Page Content -->
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Feedback</h1>
+                <p class="page-subtitle">We value your experience using the CHART guidelines</p>
+            </div>
+
+            <div class="feedback-intro">
+                <p>Your feedback helps us improve and expand our resources for the research community. Please share your experience, suggestions, or any challenges you encountered while using the CHART reporting guideline.</p>
+            </div>
+            
+            <form id="feedbackForm" class="feedback-form" action="https://formspree.io/f/mwprvngr" method="POST">
+                <input type="hidden" name="_subject" value="New CHART Feedback Submission" />
+                <input type="hidden" name="_next" value="https://aaronyuuu.github.io/guideline/feedback.html?success=true" />
+                <input type="text" name="_gotcha" style="display:none" />
+                
+                <div class="form-group">
+                    <label for="experience">Rate your overall experience *</label>
+                    <div class="rating-group">
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                        <label for="rating5">Excellent</label>
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                        <label for="rating4">Good</label>
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                        <label for="rating3">Average</label>
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                        <label for="rating2">Poor</label>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                        <label for="rating1">Very Poor</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mostUseful">Which resource was most useful?</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="useful-full" name="useful" value="full-checklist">
+                        <label for="useful-full">Full Checklist</label>
+                        <input type="checkbox" id="useful-flow" name="useful" value="flow-diagram">
+                        <label for="useful-flow">Flow Diagram</label>
+                        <input type="checkbox" id="useful-abstract" name="useful" value="abstract-checklist">
+                        <label for="useful-abstract">Abstract Checklist</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments and suggestions</label>
+                    <textarea id="comments" name="comments" rows="6" placeholder="Please share your experience, suggestions for improvement, or any challenges you encountered..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="followUp" name="followUp" value="yes">
+                        <label for="followUp">I would like to be contacted for follow-up</label>
+                    </div>
+                </div>
+
+                <div id="emailGroup" class="form-group" style="display: none;">
+                    <label for="email">Email address for follow-up *</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit Feedback</button>
+                    <button type="reset" class="btn btn-secondary">Clear Form</button>
+                </div>
+            </form>
+
+            <div class="feedback-info">
+                <h2>Why Your Feedback Matters</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3>Improve Usability</h3>
+                        <p>Your input helps us identify areas where the guidelines can be clearer or more user-friendly.</p>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Enhance Quality</h3>
+                        <p>Feedback from real users ensures our guidelines remain relevant and effective for the research community.</p>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3>Guide Development</h3>
+                        <p>Your suggestions help us prioritize future updates and new resources for the CHART framework.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="CHARTlogo.png" alt="CHART Logo" class="footer-logo">
+                    <p>Advancing the quality of chatbot health advice studies and research through transparent reporting.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="citation.html">Citation</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="FullCHecklist.pdf" target="_blank">CHART Checklist</a></li>
+                        <li><a href="MethodologicalDiagram.pdf" target="_blank">Methodological Diagram</a></li>
+                        <li><a href="AbstractChecklist.pdf" target="_blank">Abstract Checklist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>For questions about CHART guidelines:</p>
+                    <p><a href="mailto:bright.huo@dal.ca" style="color: inherit;">bright.huo@dal.ca</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> CHART Collaboration. All rights reserved.</p>
+                <p><a href="https://github.com/AaronYuuu/guideline" target="_blank" rel="noopener">View on GitHub</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citation - CHART Reporting Guideline</title>
+    <meta name="description" content="How to cite the CHART reporting guideline in various formats.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="CHARTlogo.png" alt="CHART Logo" class="logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="citation.html" class="nav-link active">Citation</a></li>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Citation Page Content -->
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Citation</h1>
+                <p class="page-subtitle">How to cite the CHART reporting guideline</p>
+            </div>
+
+            <div class="citation-content">
+                <div class="citation-block">
+                    <h2>How to Cite CHART</h2>
+                    <div class="citation-box">
+                        <div class="citation-controls">
+                            <label for="citationFormat">Citation Format:</label>
+                            <select id="citationFormat" onchange="updateCitationFormat()">
+                                <option value="vancouver">Vancouver (Default)</option>
+                                <option value="apa">APA</option>
+                                <option value="mla">MLA</option>
+                            </select>
+                        </div>
+                        <div class="citation-text-container">
+                            <p id="citationText" class="citation-text">
+                                Reporting guideline for chatbot health advice studies: the Chatbot Assessment Reporting Tool (CHART) statement. BMJ Medicine. 2025;4:e001632. https://doi.org/10.1136/bmjmed-2025-001632
+                            </p>
+                        </div>
+                        <button class="copy-citation" onclick="copyCitation()">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                            </svg>
+                            Copy Citation
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="citation-block">
+                    <h2>Published In 7 Journals to Ensure Dissemination</h2>
+                    <div class="journals-grid">
+                        <div class="journal-item">
+                            <h3>BMJ Medicine</h3>
+                            <a href="https://bit.ly/CHARTbmjmed" target="_blank" class="journal-link">
+                                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                View Article
+                            </a>
+                        </div>
+                        <div class="journal-item">
+                            <h3>British Journal of Surgery</h3>
+                            <a href="https://bit.ly/CHARTbjs" target="_blank" class="journal-link">
+                                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                View Article
+                            </a>
+                        </div>
+                        <div class="journal-item">
+                            <h3>BMC Medicine</h3>
+                            <a href="https://bit.ly/CHARTbmc" target="_blank" class="journal-link">
+                                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                View Article
+                            </a>
+                        </div>
+                        <div class="journal-item">
+                            <h3>JAMA Network Open</h3>
+                            <a href="https://bit.ly/CHARTjamao" target="_blank" class="journal-link">
+                                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                View Article
+                            </a>
+                        </div>
+                        <div class="journal-item">
+                            <h3>Annals of Family Medicine</h3>
+                            <a href="https://bit.ly/CHARTannfam" target="_blank" class="journal-link">
+                                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                View Article
+                            </a>
+                        </div>
+                        <div class="journal-item">
+                            <h3>Artificial Intelligence in Medicine</h3>
+                            <a href="https://bit.ly/CHARTartmed" target="_blank" class="journal-link">
+                                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                View Article
+                            </a>
+                        </div>
+                        <div class="journal-item">
+                            <h3>BMJ</h3>
+                            <a href="https://bit.ly/CHARTbmj" target="_blank" class="journal-link">
+                                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                View Article
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="citation-guidelines">
+                    <h2>Citation Guidelines</h2>
+                    <div class="guidelines-grid">
+                        <div class="guideline-item">
+                            <h3>For Research Papers</h3>
+                            <p>When referencing CHART in your research methodology or discussion sections, please cite the main publication and indicate which specific resources (Full Checklist, Flow Diagram, or Abstract Checklist) you used.</p>
+                        </div>
+                        <div class="guideline-item">
+                            <h3>For Reviews and Editorials</h3>
+                            <p>When discussing reporting standards in chatbot health research, cite CHART as a framework for improving transparency and reproducibility in the field.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collaborative-members">
+                    <h2>CHART Collaborative Members</h2>
+                    <div class="members-content">
+                        <p class="members-placeholder">Awaiting names.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="CHARTlogo.png" alt="CHART Logo" class="footer-logo">
+                    <p>Advancing the quality of chatbot health advice studies and research through transparent reporting.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="citation.html">Citation</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="FullCHecklist.pdf" target="_blank">CHART Checklist</a></li>
+                        <li><a href="MethodologicalDiagram.pdf" target="_blank">Methodological Diagram</a></li>
+                        <li><a href="AbstractChecklist.pdf" target="_blank">Abstract Checklist</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>For questions about CHART guidelines:</p>
+                    <p><a href="mailto:bright.huo@dal.ca" style="color: inherit;">bright.huo@dal.ca</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> CHART Collaboration. All rights reserved.</p>
+                <p><a href="https://github.com/AaronYuuu/guideline" target="_blank" rel="noopener">View on GitHub</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
